@@ -10,13 +10,9 @@ let numbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 let symbols = ['`','~', '!', '@', '#', '$', '%', '^', '&', '*' ,'(', ')', '_','-','=','+','[',']','{','}','[',']' ,'|',';',':','"',',','<','.','>','/','?',"'",'*'];
 
 function number (arr){
-    if(arr == numbers){
-        return 10;
-    }else if(arr == alphabets){
-        return 26;
-    }else{
-        return 32;
-    }
+    if(arr == numbers) return 10;
+    if(arr == alphabets) return 26;
+    if(arr == symbols) return 36;
 }
 
 function generateCode (userInput){
